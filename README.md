@@ -23,3 +23,4 @@ Functional  Architecture: Redhat Openshift
 TBD
 
 Ansible playbook:
+TBD
