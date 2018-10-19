@@ -1,0 +1,7 @@
+---
+# tasks file for join-worker-node
+- name: new swarm join token - worker
+  when: inventory_hostname in groups['ucp-lb']
+  shell: >
+    docker swarm join-token worker |grep token | awk '{print $5}'
+  register: wkrtoken

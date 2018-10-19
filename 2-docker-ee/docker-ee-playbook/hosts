@@ -1,0 +1,25 @@
+[all]
+
+
+[ucp-lb]
+lb_ucp_manager ansible_ssh_host=ucp.ias-paas.olympe.local ansible_ssh_port=22 ansible_ssh_user=root
+
+[ucp-masters]
+ucp.ias-paas.olympe.local
+192.32.75.136
+192.32.75.137
+
+[dtr-nodes]
+dtr.ias-paas.olympe.local
+192.32.75.138
+192.32.75.139
+
+[worker-nodes]
+192.32.75.20 ansible_ssh_port=22 ansible_ssh_user=szrafi
+192.32.75.140
+192.32.75.45
+
+[new-worker]
+192.32.75.140
+192.32.75.45
+

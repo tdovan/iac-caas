@@ -1,0 +1,4 @@
+---
+  - hosts: dtr-nodes
+    roles:
+      - push-docker-dtr-images

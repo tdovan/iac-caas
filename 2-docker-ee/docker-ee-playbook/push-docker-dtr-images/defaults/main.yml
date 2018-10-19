@@ -1,0 +1,7 @@
+---
+docker_repo: stable-17.06
+docker_subscription: ""
+docker_engine_labels: {}
+docker_bind_socket: true
+docker_bind_ip: ""
+docker_port: 2375

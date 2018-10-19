@@ -1,0 +1,17 @@
+---
+- name: Load image from archive and push to a private registry
+  copy:
+    src: ucp_images_2.2.11.tar.gz
+    dest: /tmp/ucp_images_2.2.11.tar.gz
+  when: inventory_hostname in groups['new-worker']
+
+- name: Load images
+  shell: docker load < /tmp/ucp_images_2.2.11.tar.gz
+  when: inventory_hostname in groups['new-worker']
+
+- name: rpm | Configure the Docker engine
+  template:
+    src: config.j2
+    dest: "{{docker_config}}"
+  notify: restart docker-engine
+  when: inventory_hostname in groups['new-worker']
