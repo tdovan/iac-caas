@@ -15,6 +15,7 @@ Automation end-to-end workflow
 TBD
 
 Technical Architcture: HPE Synergy 12000 + HPE SY480 Compute module + HPE DS3940 storage module
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 Functional  Architecture: Docker-EE
 TBD
